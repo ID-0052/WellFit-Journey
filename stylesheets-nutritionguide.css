@@ -1,0 +1,463 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #ffffff   ;
+    color: #000000;
+    margin: 0% 0% 0% 0%;
+}
+
+.header {
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom: 0.1em solid black;
+}
+
+.navbar {
+    text-align: center;
+    border-bottom: 0.1em solid black;
+}
+
+.navbar ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar a {
+    font-family: monospace;
+    font-size: 1.50em;
+    font-weight: 900;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar a:active {
+    opacity: 0.8;
+}
+
+.navbar a:hover {
+    background-color: #000000;
+    font-weight: bolder;
+    color: #ffffff;
+    padding: 0.3em;
+    border-radius: 0.2em;
+}
+
+.navbar a.current-page {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.3em;
+    border-radius: 0.2em;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar ul {
+        display: block;
+        list-style: none;
+    }
+
+    .navbar li {
+        padding-bottom: 10px;
+    }
+}
+
+.header_video {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.text_video {
+    position: relative;
+    font-size: 6em;
+    color: #ffffff;
+    text-align: center;
+    margin: 1em 0 0 0;
+}
+
+.quote_video {
+    position: relative;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.header_video input[type=search] {
+    position: relative;
+    width: 15%;
+    text-align: center;
+    margin: 1% 43%;
+    border: 1px solid rgb(44, 44, 44);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    border-radius: 3px;
+}
+
+.header_video video{
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    top: 0em;
+    transform: translate(-35%,-35%);
+    filter: blur(3px);
+}
+
+
+.nutrition-navbar {
+    margin: 2rem 2.5rem 0 2.5rem;
+    font-family: monospace;
+}
+
+.nutrition-navbar ul {
+    font-size: 1.8em;
+    color: #000000;
+    margin-left: 1em;
+}
+
+.nutrition-navbar li {
+    margin: 0.8em 0 0.8em 0;
+}
+
+.nutrition-navbar a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+}
+
+.nutrition-navbar a:active {
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.difficulty-navbar {
+    align-content: center;
+    border: 0.2em solid black;
+    margin: 5em 70em 5em 0em;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px;
+}
+
+.difficulty-navbar h2 {
+    font-size: 3em;
+    color: #000000;
+    margin-left: 0.5em;
+}
+
+.effective-meal-planning {
+    margin: 2rem 2.5rem 2em 2.5rem;
+    font-family: monospace;
+}
+
+.effective-meal-planning h2 {
+    font-size: 3em;
+}
+
+.effective-meal-planning p {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+
+.meal-planning-sub {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.meal-planning-box {
+    margin: 1em 1em 1em 0em;
+    padding-bottom: 1.5em;
+}
+
+.meal-planning-box h2 {
+    font-size: 2.5em;
+    margin-left: 0em;
+    text-decoration: underline;
+}
+
+.meal-planning-box ol {
+    font-size: 1.8em;
+    margin: 1em 2em 1em 0em;
+    background-color: rgb(255, 255, 255);
+    border: 0.1em solid rgb(34, 34, 34);
+    border-radius: 0.2em;
+    box-shadow: 2px 2px black;
+    color: #1d1d1d;
+}
+
+.meal-planning-box li {
+    margin: 2em 1em 1em 1em;
+}
+
+.weekly-plan > ul {
+    list-style: none;
+    justify-content: center;
+    border-radius: 0.2em;
+    margin-top: 8.3em;
+    padding-left: 0;
+}
+
+.weekly-plan h2 {
+    font-size: 1.8em;
+    padding-left: 1em;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border-radius: 0.1em;
+}
+
+.weekly-plan hr {
+    border: 0.1em solid rgb(0, 0, 0);
+}
+
+.days-points {
+    padding-left: 2em;
+}
+
+.days-points li {
+    font-size: 1.2em;
+    list-style: disc;
+    margin: 1em 1em 1em 0em;
+}
+
+.healthy-eating-habits {
+    margin: 0rem 2.5rem 3em 2.5rem;
+    font-family: monospace;
+}
+
+.healthy-eating-habits h2 {
+    font-size: 3em;
+}
+
+.healthy-eating-habits p {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.top-habits-grid {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
+    margin: 0 0 0 0;
+}
+
+.top-habits h2 {
+    font-size: 2.5em;
+    margin-left: 0em;
+    margin-top: 1.8em;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+.top-habits-points ol {
+    font-size: 1.8em;
+    margin: 0em 2em 1em 0em;
+    color: #1d1d1d;
+}
+
+.top-habits-points li {
+    margin: 2em 0em 1em 1.5em;
+}
+
+.top-habits-grid-img {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+}
+
+.top-habits-grid-img > img {
+    width: 100%;
+    border-radius: 0.3em;
+    margin: 3em 0 3em 0;
+    box-shadow: 4px 5px 6px #555555;
+}
+
+.recipes {
+    margin: 0rem 2.5rem 5em 2.5rem;
+    font-family: monospace;
+}
+
+.recipes h2 {
+    font-size: 3em;
+}
+
+.recipes p {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.recipes-list h2 {
+    font-size: 2.5em;
+    margin-left: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+.recipes-instrustions ul {
+    font-size: 1.8em;
+    margin: 0em 2em 0em 0em;
+    color: rgb(0, 0, 0);
+    list-style: none;
+}
+
+.main-list ul {
+    font-size: 1em;
+    margin: 0em 0em 0em 1em;
+    list-style: '▸ ';
+}
+
+.main-list li {
+    margin: 0.3em 0em 0.5em 0em;
+}
+
+.recipes-instrustions {
+    display: grid;
+    grid-template-columns: 22% 78%;
+    margin-bottom: 2em;
+    margin-left: 3em;
+    align-items: center;
+}
+
+.recipes-instrustions img {
+    width: 100%;
+    border-radius: 0.3em;
+}
+
+.recipe-1 {
+    border-radius: 0.5em;
+    margin: 4em 0 0 0;
+    box-shadow: 2px 2px  #000000;
+    border: 0.2em solid rgb(0, 0, 0);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #000000;
+    margin: 0 4px;
+    font-family: monospace;
+    font-size: 1.3em;
+}
+
+.pagination a.active {
+    background-color: #000000;
+    color: white;
+    border: 1px solid #000000;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.footer {
+    display: inline-flex;
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+.logo_contact {
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 2%;
+    border-right: 1px solid white;
+}
+
+.footer h2 {
+    font-size: 28px;
+    color: #ffffff;
+    text-decoration: underline;
+    text-align: center;
+    padding: 8% 0% 0% 0%;
+}
+
+.footer h4 {
+    font-family: monospace;
+    font-size: 18px;
+    color: #ffffff;
+    padding-top: 1%;
+    margin: 12% 0 0 0;
+}
+
+.footer img {
+    width: 12%;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.footer img:hover {
+    opacity: 0.5;
+}
+
+.footer img:active {
+    opacity: 1;
+    width: 12%;
+}
+
+.links {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.links ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    list-style: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .links ul {
+        display: block;
+    }
+
+    .links p {
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+.links a {
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links a:active {
+    opacity: 0.9;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.links p {
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: lighter;
+    opacity: 0.8;
+    padding-left: 6%;
+}
